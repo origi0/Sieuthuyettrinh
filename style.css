@@ -1,0 +1,41 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+@keyframes rgbBorder {
+    0% {
+        box-shadow: 0 0 20px 5px red;
+    }
+    16% {
+        box-shadow: 0 0 20px 5px yellow;
+    }
+    32% {
+        box-shadow: 0 0 20px 5px green;
+    }
+    48% {
+        box-shadow: 0 0 20px 5px cyan;
+    }
+    64% {
+        box-shadow: 0 0 20px 5px blue;
+    }
+    80% {
+        box-shadow: 0 0 20px 5px magenta;
+    }
+    100% {
+        box-shadow: 0 0 20px 5px red;
+    }
+}
+
+video {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    border-radius: 15px;
+    left: 50%;
+    animation: rgbBorder 6s linear infinite; /* Smoother RGB transition */
+}
+
+
